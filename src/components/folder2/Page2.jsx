@@ -15,7 +15,7 @@ const Page2 = () => {
        
 
         <a class="navbar-brand ms-3 text-light" href="https//www.youtube.com ">
-          <b>studioz</b>
+          <b>studioz studioz</b>
         </a>
 
         <button
