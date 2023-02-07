@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import Navbar from '../src/components/Navbar/Navbar';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css';
+import Header from './components/Header/Header';
+import Page2 from './components/folder2/Page2';
+import Page3 from './components/Page3/Page3';
+import Page4 from './components/page4/Page4';
+import Page5 from './components/page5/Page5';
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container-fluid">
+   <Navbar/>
+   <Header/>
+   <Page2/>
+   <Page3/>
+   <Page4/>
+   <Page5/>
     </div>
   );
 }
