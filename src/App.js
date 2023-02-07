@@ -7,6 +7,7 @@ import Page2 from './components/folder2/Page2';
 import Page3 from './components/Page3/Page3';
 import Page4 from './components/page4/Page4';
 import Page5 from './components/page5/Page5';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 
@@ -15,6 +16,19 @@ import Page5 from './components/page5/Page5';
 function App() {
   return (
     <div className="App container-fluid">
+
+    <BrowserRouter>
+    <Routes>
+    <Route path='Navbar' element={<Navbar/>}> </Route>
+    <Route path='Page3' element={<Page3/>}> </Route>
+    <Route path='Page2' element={<Page2/>}> </Route>
+    <Route path='Page4' element={<Page4/>}> </Route>
+    <Route path='Pagee5' element={<Page5/>}> </Route>
+    <Route path='Header' element={<Header/>}> </Route>
+ 
+    </Routes>
+    </BrowserRouter>
+
    <Navbar/>
    <Header/>
    <Page2/>

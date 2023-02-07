@@ -1,5 +1,6 @@
 import React from 'react';
 import { PlusCircle } from 'react-bootstrap-icons';
+import { Link } from 'react-bootstrap-icons';
 
 
 const Header = () => {
@@ -73,7 +74,7 @@ const Header = () => {
       <td>Russia Plant</td>
       <td>Steve Benneth</td>
       <td>Expires in 90days <span className='text-success border border-2 ms-3 bg-white rounded p-1'>NEW</span></td>
-     <a href="#paul" > <PlusCircle size={40} className=""/> </a>
+     <Link to="/Page3">  <PlusCircle size={40} className=""/>  </Link>
     </tr>
   </tbody>
 </table>
