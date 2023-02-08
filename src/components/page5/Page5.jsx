@@ -1,7 +1,9 @@
 import React from 'react'
-import { ArrowLeft, BellSlash, CloudLightningFill, CollectionPlay, EmojiDizzyFill, Grid3x3, HeartFill, QuestionCircle, ThreeDotsVertical } from 'react-bootstrap-icons';
+import { ArrowLeft, BellSlash, Clipboard, Grid3x3, HeartFill, PencilSquare, QuestionCircle, ThreeDotsVertical, Trash3 } from 'react-bootstrap-icons';
 import Img from '../../images/f1std1.png'
-import Img2 from '../../images/paul-round-pic.png'
+import Img2 from '../../images/paul-round-pic.png';
+import { Link, NavLink } from 'react-router-dom';
+
 
 export default function Page5() {
   return (
@@ -58,12 +60,12 @@ export default function Page5() {
       <nav class="navbar navbar-expand bg-secondary">
 
         <div className="navbar-nav align-items-center">
-            <a href="#paul.com " style={{color:"red"}}> <ArrowLeft className="ms-3"/>  </a>
+            <Link to="/Page4" className='text-white'>  <ArrowLeft className="ms-3"/>  </Link>
 
             <a href="#hai.com" className="text-white ms-3"> Create a New Order </a>
             
 
-            <a href="#hai.com"> <ThreeDotsVertical style={{marginLeft:"1050px",color:"red",position:"relative"}} /> </a> 
+            <a href="#hai.com"> <ThreeDotsVertical style={{marginLeft:"1050px",color:"white",position:"relative"}} /> </a> 
            
         
 
@@ -108,10 +110,10 @@ Unit Price: $4800.00
 </div>
 
 <div className="row mt-2">
-    <div className="col border border-1 p-3">   <HeartFill/> Favourites</div>
-    <div className="col border border-1 p-3">  <EmojiDizzyFill/>  Edit</div>
-    <div className="col border border-1 p-3">  <CollectionPlay/> Copy</div>
-    <div className="col border border-1 p-3">  <CloudLightningFill/>  Delete</div>
+    <div className="col border border-1 p-3">   <HeartFill className='text-danger'/>  Favourites</div>
+    <div className="col border border-1 p-3">  <Link to="/Page4" className='text-dark '> <PencilSquare className='text-danger'/>  Edit  </Link></div>
+    <div className="col border border-1 p-3">  <Clipboard className='text-danger'/> Copy</div>
+    <div className="col border border-1 p-3">  <Link to="/" className="text-dark"> <Trash3 className='text-danger'/>  Delete </Link></div>
 </div>
 
 
@@ -177,8 +179,9 @@ Unit Price: $4800.00
     
    <h5>$5061.41</h5>
   <form class="form-inline">
-    <button class="btn btn-outline-success me-3 bg-white text-danger" type="submit">Search</button>
-    <button class="btn btn-outline-success bg-danger text-dark" type="submit">Search</button>
+    {/* <button class="btn btn-outline-success me-3 bg-white text-danger" type="submit">Add More</button> */}
+    <NavLink Component={Link} to="/Page2" className='btn btn-white btn-outline-success me-3'> Add More </NavLink>
+    <button class="btn btn-outline-success bg-danger text-dark" type="submit">Place Order</button>
 
   </form>
 </nav>

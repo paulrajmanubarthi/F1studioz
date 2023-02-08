@@ -2,7 +2,9 @@ import React from "react";
 import { ArrowLeft, ArrowRight, BellSlash, Grid3x3, QuestionCircle, ThreeDotsVertical,} from "react-bootstrap-icons";
 import "./page.css";
 import Img from '../../images/f1std1.png'
-import Img2 from '../../images/paul-round-pic.png'
+import Img2 from '../../images/paul-round-pic.png';
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 const Page2 = () => {
@@ -57,11 +59,11 @@ const Page2 = () => {
       <nav class="navbar navbar-expand bg-secondary">
 
         <div className="navbar-nav align-items-center">
-            <a href="#paul.com " style={{color:"red"}}> <ArrowLeft className="ms-3"/>  </a>
+        <NavLink Component={Link} to="/" style={{color:"white"}}> <ArrowLeft className="ms-3"/>  </NavLink>
 
             <a href="#hai.com" className="text-white ms-3"> Create a New Order </a>
 
-            <a href="#hai.com"> <ThreeDotsVertical style={{marginLeft:"1050px",color:"red"}} /> </a> 
+            <a href="#hai.com"> <ThreeDotsVertical style={{marginLeft:"1050px",color:"white"}} /> </a> 
         
 
         </div>
@@ -71,45 +73,45 @@ const Page2 = () => {
 
 
       
-             <div id="id1" className="mt-3 bg-secondary">       
+             <div id="id1" className="mt-3 bg-light shadow-lg">       
                <div className=" d-flex align-items-center "> 
              
-               <a href="#paul.com" class='fs-5 nav-link disabled'> <b className="text-dark ms-4 ">configure your door from scratch</b>
+                <a href="#paul.com" class='fs-5 nav-link disabled'> <b className="text-dark ms-4 ">configure your door from scratch</b>
                </a>
-               <a href="#paul.com" className="ms-auto text-dark">   <ArrowRight className="ms-auto me-3 mt-4"/> </a>
+               <a href="#paul.com" className="ms-auto text-dark">   <Link to="/Page3"><ArrowRight className="ms-auto me-3 mt-4 text-dark"/> </Link> </a>
                </div>
                <p class="fs-6 p-2 ps-4">Residential, commercial entry doors</p> 
                </div> 
 
                
-             <div id="id1" className="mt-3 bg-secondary">       
+             <div id="id1" className="mt-3 bg-light shadow-lg">       
                <div className=" d-flex align-items-center "> 
              
                <a href="#paul.com" class='fs-5 nav-link disabled'> <b className="text-dark ms-4 ">Parts/Openers</b>
                </a>
-               <a href="#paul.com" className="ms-auto text-dark">   <ArrowRight className="ms-auto me-3 mt-4"/> </a>
+               <a href="#paul.com" className="ms-auto text-dark">   <Link to="/Page3"><ArrowRight className="ms-auto me-3 mt-4 text-dark"/> </Link> </a>
                </div>
                <p class="fs-6 p-2 ps-4">Order parts and openors</p> 
                </div> 
 
                
-             <div id="id1" className="mt-3 bg-secondary">       
+             <div id="id1" className="mt-3 bg-light shadow-lg">       
                <div className=" d-flex align-items-center "> 
              
                <a href="#paul.com" class='fs-5 nav-link disabled'> <b className="text-dark ms-4 ">Direct Item Entry</b>
                </a>
-               <a href="#paul.com" className="ms-auto text-dark">   <ArrowRight className="ms-auto me-3 mt-4"/> </a>
+               <a href="#paul.com" className="ms-auto text-dark">   <Link to="/Page3"><ArrowRight className="ms-auto me-3 mt-4 text-dark"/> </Link> </a>
                </div>
                <p class="fs-6 p-2 ps-4"> Order Parts/Openers using Id</p> 
                </div> 
 
                
-             <div id="id1" className="mt-3 bg-secondary">       
+             <div id="id1" className="mt-3 bg-light shadow-lg">       
                <div className=" d-flex align-items-center "> 
              
                <a href="#paul.com" class='fs-5 nav-link disabled'> <b className="text-dark ms-4 ">Choose From Favourites</b>
                </a>
-             <a href="#paul.com" className="ms-auto text-dark">   <ArrowRight className="ms-auto me-3 mt-4"/> </a>
+               <a href="#paul.com" className="ms-auto text-dark">   <Link to="/Page3"><ArrowRight className="ms-auto me-3 mt-4 text-dark"/> </Link> </a>
                </div>
                <p class="fs-6 p-2 ps-4">Re-order Door from favouties</p> 
                </div> 

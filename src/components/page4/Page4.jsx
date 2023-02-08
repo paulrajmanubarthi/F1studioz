@@ -1,8 +1,9 @@
 import React from 'react';
-import { ArrowLeft, BellSlash, Grid3x3, QuestionCircle, ThreeDotsVertical } from 'react-bootstrap-icons';
+import { ArrowLeft, BellSlash, Grid3x3, Link, QuestionCircle, ThreeDotsVertical } from 'react-bootstrap-icons';
 import './Page4.css'
 import Img from '../../images/f1std1.png'
-import Img2 from '../../images/paul-round-pic.png'
+import Img2 from '../../images/paul-round-pic.png';
+import { NavLink } from 'react-router-dom';
 
 
 const Page4 = () => {
@@ -58,11 +59,11 @@ const Page4 = () => {
       <nav class="navbar navbar-expand bg-secondary">
 
         <div className="navbar-nav align-items-center">
-            <a href="#paul.com " style={{color:"red"}}> <ArrowLeft className="ms-3"/>  </a>
+            <NavLink Component={Link} to="/Page3" style={{color:"white"}}> <ArrowLeft className="ms-3"/>  </NavLink>
 
             <a href="#hai.com" className="text-white ms-3"> Configure a new door 2of3 </a>
 
-            <a href="#hai.com"> <ThreeDotsVertical style={{marginLeft:"1000px",color:"red",position:"relative"}} /> </a> 
+            <a href="#hai.com"> <ThreeDotsVertical style={{marginLeft:"1000px",color:"white",position:"relative"}} /> </a> 
     
 
         </div>
@@ -446,8 +447,13 @@ const Page4 = () => {
              
             </div>
             <div className='nav justify-content-end me-3 mb-3'>
-            <button type="button" class="btn btn-light btn-sm me-3 border border-danger">Small button</button>
-<button type="button" class="btn btn-danger btn-sm  me-4 text-dark">Small button</button>
+           <button type="button" class="btn btn-light btn-sm me-3 border border-danger">Preview</button> 
+     {/* <button type="button" class="btn btn-danger btn-sm  me-4 text-dark">Add to Cart</button> */}
+          
+            
+             <NavLink Component={Link} to="/Page5" className='btn btn-danger'> Add To Cart </NavLink>
+
+
             </div>
  </div>
         </div>
